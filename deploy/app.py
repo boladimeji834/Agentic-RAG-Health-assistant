@@ -2,11 +2,11 @@ import streamlit as st
 from streamlit_chat import message
 from process import generate_response 
 
-st.title("Healthcare Agentic Assistant")
+st.title("KowrryHealth Agentic Healthcare Assistant")
 
 def initialize_session_state():
     if "generated" not in st.session_state:
-        st.session_state["generated"] = ["Hello! How can I assist you today?"]
+        st.session_state["generated"] = ["Hello! How can I assist with your health today?"]
     if "past" not in st.session_state:
         st.session_state["past"] = ["Hey there!"]
 
