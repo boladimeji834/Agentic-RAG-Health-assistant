@@ -5,6 +5,7 @@ from langchain.vectorstores import FAISS
 from langchain.embeddings import HuggingFaceEmbeddings
 from dotenv import load_dotenv
 import os
+import streamlit as st
 
 load_dotenv()
 api_key = st.secrets["API_KEY"]
